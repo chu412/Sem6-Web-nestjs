@@ -1,0 +1,20 @@
+append style
+  link(rel='stylesheet' href='/css/style.css')
+  link(rel='stylesheet' href='/css/login.css')
+
+append content 
+    <main>
+            form
+                h2  Register
+                label  Username
+                input(type='user' name='username' placeholder='Username')
+                label Email
+                input(type='email' name='email' placeholder='Email')
+                label Password
+                input(type='password' name='password' placeholder='Password' required='')
+                button(onclick='register()') Register
+                span(style='color: #16763e ')
+                    | Already have an account? 
+                    a(href='/login') Login
+
+    </main>

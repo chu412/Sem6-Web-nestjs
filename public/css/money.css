@@ -1,0 +1,43 @@
+.table-div {
+    background-color: #f1bbd6;
+    margin: 20px;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    box-shadow: 7px 7px 10px rgb(116, 31, 73);
+    text-align: center;
+}
+
+.money-table{
+    margin: auto;
+    display: grid;
+    border-collapse: collapse;
+    border: 1px solid black;
+    overflow-y: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+thead, tbody, tr {
+    display: contents;
+}
+
+tr:nth-child(even) td {
+    background: white;
+}
+
+th, td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 0.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+th {
+    background: #0ea12e;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: white;
+}

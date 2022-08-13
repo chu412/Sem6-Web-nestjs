@@ -1,0 +1,36 @@
+extends ../main.pug 
+
+append style
+  link(rel='stylesheet' href='/css/style.css')
+  link(rel='stylesheet' href='/css/money.css')
+
+append content
+    main
+        .table-div
+            h1 Currency exchange rate 
+            table.money-table
+                thead
+                    tr
+                        th -
+                        th VND
+                        th RUB
+                        th EUR
+                tbody
+                    tr
+                        td
+                            | USD 
+                            br
+                            i
+                            | under 1000$
+                        td  22758
+                        td  108.7
+                        td  0.86
+                    tr
+                        td
+                            | USD 
+                            br
+                            i over 1000$
+                        td  22964
+                        td  109.42
+                        td  0.9
+
